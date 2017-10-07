@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:bind="http://schemas.android.com/apk/res-auto">
 
     <data>
+
+        <import type="android.view.View" />
 
         <variable
             name="isLoading"
@@ -18,18 +20,32 @@
         android:layout_height="match_parent"
         tools:context="com.shevart.android_libraries.databinding.DataBindingSampleActivity">
 
-        <LinearLayout
+        <include
+            android:id="@+id/userDetailView"
+            layout="@layout/element_user_detail_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:visibility="@{isLoading ? View.GONE : View.VISIBLE}"
+            bind:user="@{user}" />
 
-        </LinearLayout>
-
-        <ProgressBar
-            android:id="@+id/pbUserLoading"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="@{isLoading ? View.VISIBLE : View.GONE}">
 
+            <ProgressBar
+                android:id="@+id/pbUserLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/loading" />
+        </LinearLayout>
     </FrameLayout>
 </layout>
