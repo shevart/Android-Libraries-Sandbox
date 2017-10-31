@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".databinding.DataBindingSampleActivity"></activity>
+        <activity android:name=".databinding.DataBindingSampleActivity" />
+        <activity android:name=".dagger2.Dagger2SampleActivity"></activity>
     </application>
 
 </manifest>

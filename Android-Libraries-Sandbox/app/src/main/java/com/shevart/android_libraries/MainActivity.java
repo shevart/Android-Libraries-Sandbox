@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         findViewById(R.id.btDataBinding).setOnClickListener(this);
+        findViewById(R.id.btDagger2).setOnClickListener(this);
     }
 
     @Override
@@ -19,6 +20,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (view.getId()) {
             case R.id.btDataBinding:
                 Launcher.ActivityComponent.dataBinding(MainActivity.this);
+                break;
+            case R.id.btDagger2:
+                Launcher.ActivityComponent.dagger2(MainActivity.this);
                 break;
             default:
                 throw new IllegalArgumentException("Check it!");

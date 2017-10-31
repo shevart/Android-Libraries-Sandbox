@@ -20,4 +20,10 @@
         android:layout_height="wrap_content"
         android:text="@string/databinding"/>
 
+    <Button
+        android:id="@+id/btDagger2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dagger_2"/>
+
 </LinearLayout>
