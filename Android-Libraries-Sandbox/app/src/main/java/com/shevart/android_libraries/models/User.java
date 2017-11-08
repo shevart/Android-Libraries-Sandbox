@@ -8,6 +8,7 @@ public class User {
     private String secondName;
     private String email;
     private Date birthday;
+    private String avatarUrl;
 
     public long getId() {
         return id;
@@ -47,5 +48,13 @@ public class User {
 
     public void setBirthday(Date birthday) {
         this.birthday = birthday;
+    }
+
+    public String getAvatarUrl() {
+        return avatarUrl;
+    }
+
+    public void setAvatarUrl(String avatarUrl) {
+        this.avatarUrl = avatarUrl;
     }
 }
