@@ -40,7 +40,8 @@ dependencies {
 
     // images dependencies
     compile 'de.hdodenhof:circleimageview:2.2.0'
-    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.github.bumptech.glide:glide:4.3.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.3.1'
 
 
     // test dependencies

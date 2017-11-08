@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.shevart.android_libraries">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,7 +20,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".databinding.DataBindingSampleActivity" />
-        <activity android:name=".dagger2.Dagger2SampleActivity"></activity>
+        <activity android:name=".dagger2.Dagger2SampleActivity"/>
     </application>
 
 </manifest>

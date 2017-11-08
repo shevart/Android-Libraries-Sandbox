@@ -77,6 +77,7 @@ public class MockUtil {
             user.setSecondName(nextSecondName());
             user.setEmail(nextEmail(user.getName()));
             user.setBirthday(new Date());
+            user.setAvatarUrl("https://varlamov.me/2017/cottage/08.jpg");
             return user;
         }
     }

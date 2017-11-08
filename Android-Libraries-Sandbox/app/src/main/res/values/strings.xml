@@ -5,4 +5,6 @@
     <string name="databinding">DataBinding</string>
     <string name="dagger_2">Dagger2</string>
     <string name="user_name">User name</string>
+    <string name="email">Email</string>
+    <string name="birthday">Birthday</string>
 </resources>
